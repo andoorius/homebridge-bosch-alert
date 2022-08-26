@@ -127,7 +127,7 @@ export class BoschAlertHomebridgePlatform implements DynamicPlatformPlugin {
     const profileMap = new Map<HomeKitSecurityState, number>([
       [HomeKitSecurityState.AWAY_ARM, 0],
       [HomeKitSecurityState.STAY_ARM, 1],
-      //[HomeKitSecurityState.NIGHT_ARM, 0], // Currently implicit
+      [HomeKitSecurityState.NIGHT_ARM, 2], // Currently implicit
     ]);
 
     const uuid = this.api.hap.uuid.generate(UUID);
